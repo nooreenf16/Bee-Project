@@ -25,3 +25,4 @@ STEPS:
 9. merge bounding boxes which are very close to eachother (becasue the contours of the bees could be split during findcontours)
 10. draw the final bounding boxes on the video frames
 11. download output.
+12. get frame number and timestamps of bee entry and exit
