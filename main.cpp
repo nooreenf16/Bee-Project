@@ -102,11 +102,12 @@ int main()
         vector<Rect> merged = mergeOverlappingBoxes(boxes);
         vector<Rect> merged2 = mergeCloseBoxes(merged, 150);
 
-        for (const auto &r : merged2)
-        {
+        // uncomment for bounding boxes
+        // for (const auto &r : merged2)
+        // {
 
-            rectangle(frame, r, Scalar(150, 225, 135), 5);
-        }
+        //    rectangle(frame, r, Scalar(150, 225, 135), 5);
+        //}
 
         // 4. TIMESTAMPS
         if (frame_enter == 0 && merged2.size() >= 1)
